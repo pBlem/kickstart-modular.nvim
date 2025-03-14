@@ -238,6 +238,7 @@ return {
         },
 
         -- NOTE: this is where i can add additional LS. The idea being that, instead of just using Mason, this would be persisten if i ever have to setup from my repo
+        -- See `:help lspconfig-all` for a list of all the pre-configured LSPs
 
         -- LS for rust
         rust_analyzer = {},
