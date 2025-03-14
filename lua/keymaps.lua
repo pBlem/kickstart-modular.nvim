@@ -45,4 +45,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- Formatting tables as text
+-- found at https://jcuenod.github.io/bibletech/2023/03/14/formatting-md-tables-in-neovim/
+-- TIP: use key-combo 'vip' for choosing lines. Then this keybind
+vim.keymap.set('v', '<leader>t', '!pandoc -t markdown-simple_tables<CR>', { silent = true, desc = 'Align selected md table using pandoc' })
+
 -- vim: ts=2 sts=2 sw=2 et
