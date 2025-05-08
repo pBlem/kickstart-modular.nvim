@@ -20,11 +20,12 @@ return {
           --    See the README about individual language/framework/plugin snippets:
           --    https://github.com/rafamadriz/friendly-snippets
           -- {
-          --   'rafamadriz/friendly-snippets',
-          --   config = function()
-          --     require('luasnip.loaders.from_vscode').lazy_load()
-          --   end,
-          -- },
+          --  'rafamadriz/friendly-snippets',
+          --  config = function()
+          --    -- NOTE: so, as i understand it this is where i have my snippets. I.e. the require below kinda selects what snippets im getting.
+          --  require('luasnip.loaders.from_vscode').lazy_load()
+          --  end,
+          --},
         },
       },
       'saadparwaiz1/cmp_luasnip',
